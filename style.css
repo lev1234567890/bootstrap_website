@@ -1,0 +1,65 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+[type=button], [type=reset], [type=submit], button {
+    appearance: button;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+}
+.navbar-brand{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+.welcome-form{
+    width: 100%;
+    height: 500px;
+    color: #fff;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center center;
+    -o-object-position: center center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(images/welcome-image.jpg);
+}
+.welcome-form,
+.contact-form,
+.about-form,
+.learn-form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+@media all and (max-width: 320px){
+    .navbar-brand{
+        font-size: 20px;
+    }
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+}
+.message{
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+.sub-btn{
+    border-radius: 5px;
+    background: transparent;
+    color: #0d6efd;
+}
+.btn-new-version{
+    margin-left: 5px;
+}
